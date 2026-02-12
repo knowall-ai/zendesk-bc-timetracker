@@ -1,0 +1,35 @@
+{
+  "name": "zendesk-bc-timetracker",
+  "version": "1.0.0",
+  "description": "Zendesk sidebar app for tracking time to Microsoft Dynamics 365 Business Central",
+  "main": "src/index.jsx",
+  "scripts": {
+    "dev": "webpack --config webpack.config.dev.js --watch",
+    "build": "webpack --config webpack.config.prod.js",
+    "lint": "eslint src --ext .js,.jsx",
+    "package": "npm run build && zcli apps:package"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "keywords": [
+    "zendesk",
+    "business-central",
+    "time-tracking",
+    "dynamics-365"
+  ],
+  "author": "ocbentonita",
+  "license": "MIT"
+}
